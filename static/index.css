@@ -133,3 +133,14 @@ footer{
   width: 100%;
   height: 10vh;
 }
+#modal{
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  display: flex;
+  width: 40%;
+  border: 3px solid red;
+  top: 40vh;
+display: none;
+}
