@@ -4,6 +4,9 @@ var app=express()
 var path=require("path")
  app.use(express.static(path.join(__dirname + "/static")));
    const port = process.env.PORT || 4500;
+ app.get("/Login",(req,res)=>{
+ 	res.sendfile(__dirname+"/static/email.html")
+ })
 app.get("/",(req,res)=>[
 	res.sendfile(__dirname +"/static/index.html")])
 app.listen(port,()=>{

@@ -1,0 +1,115 @@
+.bg_main{
+	height: 100vh;
+	width: 100%;
+	background-color: #000000cf;
+}
+.img{
+	height: 6vh;
+	width: 90%;
+}
+.container{
+	height: 80vh;
+	width: 30%;
+	background-color: black;
+}
+@media screen and (max-width: 600px){
+	.container{
+		height: 100vh;
+		width: 100%;
+	}
+
+}
+.user{
+	width: 80%;
+	border: none;
+	outline: none;
+	background: transparent;
+	border-bottom: 2px solid grey;
+	position: relative;
+	top: 10vh;
+	left: 5%;
+	color: white;
+
+}
+.password:focus,.user:focus{
+	border-bottom: 2px solid blue;
+	transition: 0.8s;
+	position: relative;
+
+}
+.password{
+	width: 80%;
+	border: none;
+	outline: none;
+	background: transparent;
+	border-bottom: 2px solid grey;
+	position: relative;
+	top: 20vh;
+	left: 5%;
+	color: white;
+
+}
+.btn{
+height: 7vh;
+    width: 80%;
+    background-color: blue;
+    border-radius: 5px;
+    top: 27vh;
+    left: 4%;
+    position: relative;
+    }
+    .btn1{
+    	height: 7vh;
+    width: 50%;
+    background-color: green;
+    border-radius: 5px;
+    top: 30vh;
+    left: 18%;
+    position: relative;
+    }
+    /*//-------------------------------------*/
+
+#mode{
+	    height: 100vh;
+    width: 100%;
+    background-color: black;
+    position: relative;
+    z-index: 1;
+    top: -90vh;
+    display: none;
+    
+}
+
+.fname{
+	width: 80%;
+	border: none;
+	outline: none;
+	background: transparent;
+	border-bottom: 2px solid grey;
+	position: relative;
+left: 5%;
+	color: white;
+}
+.fname:focus{
+	border-bottom: 2px solid blue;
+	transition: 0.9s;
+}
+#lname{
+	left: 100%;
+}
+#mode input{
+	margin-top: 3vh;
+
+}
+.sign{
+	width: 20%;
+	height: 5vh;
+	background-color: green;
+	color: white;
+	border: none;
+	border: 2px solid green;
+	align-items: center;
+	display: flex;
+	position: relative;
+	margin: auto;
+}
