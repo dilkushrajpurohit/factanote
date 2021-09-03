@@ -7,6 +7,9 @@ var path=require("path")
  app.get("/Login",(req,res)=>{
  	res.sendfile(__dirname+"/static/email.html")
  })
+ app.get("/social",(req,res)=>{
+  res.sendfile("static/social.html")
+ })
 app.get("/",(req,res)=>[
 	res.sendfile(__dirname +"/static/index.html")])
 app.listen(port,()=>{

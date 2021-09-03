@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Manrope:wght@300&display=swap');
+*{
+	padding: 0;
+	box-sizing: border-box;
+	margin: 0 0;
+}
+.main_nav{
+	height: 10%;
+	width: 100%;
+	background-color: black;
+}
+.main{
+	background-color:#2c2c2e;
+	height: 100vh;
+	width: 100%;
+}
+.logo_name p{
+color: white;
+font-family: 'Alfa Slab One', cursive;
+}
+.logo_name{
+	position: relative;
+	top: 3vh;
+	left: 3%;
+}
+.bio{
+	height: 20vh;
+	width: 95%;
+	background-color: black;
+	position: relative;
+	top: 3vh;
+	left: 2%;
+	border-radius: 5px;
+}
+.reels{
+	height: 100vh;
+	width: 100%;
+}
+.reels section{
+	height: 55vh;
+	width: 90%;
+	border-radius: 5px;
+	margin-top: 6vh;
+	margin-left: 3.8%;
+	background-color: black;
+}
+body{
+	background-color: #2c2c2e;
+}
+.bio_nav{
+	border-bottom: 1px solid grey;
+	height: 7vh;
+	width: 100%;
+}
+.circle_photo{
+	height: 5vh;
+	position: relative;
+	border-radius: 50px;
+	top: 1vh;
+	border: 1px solid #2c2c2e;
+	width: 8%;
+	left: 2%;
+}
+.circle_photo img{
+	height: 5vh;
+	width: 100%;
+}
+.circle_para p{
+color: white;
+position: relative;
+left: 18%;
+top: -3vh;
+font-family: 'Manrope', sans-serif;
+font-size: 0.9rem;
+}
+.acces ul{
+	display: flex;
+	flex-direction: row;
+	position: relative;
+	top: 4vh;
+	left: 17%;
+}
+.acces ul li{
+	margin-left: 7%;
+}
+.nav{
+	height: 6.5vh;
+	width: 100%;
+	border-bottom: 1px solid #2c2c2e;
+}
+.main_file{
+	height: 40vh;
+	width: 90%;
+	position: relative;
+	top: 3vh;
+left: 5%;
+}
+.main_file img{
+	height: 40vh;
+	width: 100%;
+}
