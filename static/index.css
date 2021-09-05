@@ -144,3 +144,25 @@ footer{
   top: 40vh;
 display: none;
 }
+
+.social_network{
+
+ position: fixed;
+  left: 0%;
+  height: 25vh;
+  width: 11.5%;
+
+  background-color: #f1f1f1;
+  z-index: 1.9px;
+  border-radius: 10px;
+}
+.social_network section{
+height: 8vh;
+    width: 100%;
+   
+    margin-top: 0.5vh;
+}
+.social_network section img{
+  height: 6.5vh;
+  width: 100%;
+}
