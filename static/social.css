@@ -38,10 +38,10 @@ font-family: 'Alfa Slab One', cursive;
 	width: 100%;
 }
 .reels section{
-	height: 55vh;
+	height: 58vh;
 	width: 90%;
 	border-radius: 5px;
-	margin-top: 6vh;
+	margin-top: 4vh;
 	margin-left: 3.8%;
 	background-color: black;
 }
@@ -90,13 +90,42 @@ font-size: 0.9rem;
 	border-bottom: 1px solid #2c2c2e;
 }
 .main_file{
-	height: 40vh;
+	height: 40.5vh;
 	width: 90%;
 	position: relative;
 	top: 3vh;
 left: 5%;
+border-bottom: 1px solid grey;
 }
 .main_file img{
 	height: 40vh;
 	width: 100%;
+
+}
+.v_l{
+	    height: 6vh;
+    width: 0.5%;
+    top: -4vh;
+    background-color: grey;
+    position: relative;
+    left: 50%;
+
+}
+body{
+	overflow-x: hidden;
+}
+.like svg{
+	height: 7vh;
+	width: 7%;
+	left: 20%;
+	position: relative;
+	top: 3.8vh;
+}
+.break svg{height: 7vh;
+	width: 7%;
+float: right;
+position: relative;
+right: 20%;
+top: -9.8vh;
+
 }
