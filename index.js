@@ -10,10 +10,7 @@ var nodemailer=require("nodemailer")
 //mongoose.connect("mongodb://localhost:27017/factnotes",{useNewUrlParser:true}).then(()=>console.log("Successfully connected to database"))
  app.use(express.static(path.join(__dirname + "/static")));
    const port = process.env.PORT || 4500;
- app.get("/Login",(req,res)=>{
- 	res.sendfile(__dirname+"/static/email.html")
- })
-
+ 
  
 
  app.get("/social",(req,res)=>{
@@ -35,6 +32,12 @@ var nodemailer=require("nodemailer")
 
 app.get("/",(req,res)=>[
 	res.sendfile(__dirname +"/static/index.html")])
+app.get("/class10",(req,res)=>{
+  res.sendfile(__dirname+"/static/class10.html")
+})
+app.get("/class9",(req,res)=>{
+  res.sendfile(__dirname+"/static/class9.html")
+})
 app.listen(port,()=>{
 	console.log("working")
 })
