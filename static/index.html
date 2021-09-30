@@ -31,6 +31,30 @@
   <script>
      $('.counter').countUp();
 </script>
+<script >
+var modal = document.getElementById("myModal");
+
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on the button, open the modal
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
 <div class="intro">
 	<div class="loader_img">
 		<img src="circle.png">
@@ -44,11 +68,11 @@
 </div>
 	</div>
 </div>
-<nav class="navdonate" style="position:fixed">
+<nav class="navdonate" style="position:fixed;z-index: 2;opacity: 0.9">
   <a href="https://rzp.io/i/011rF1N"><button type="button" class="btn btn-danger" style="text-align:center;position: relative;left: 30%;">Donate now</button></a>
 </nav>
 <!------------------------------------------------------------------------------------->
-<nav class="navbar navbar-expand-lg navbar-light bg-dark">
+<nav class="navbar navbar-expand-lg navbar-light bg-dark" style="position:relative;z-index: 3;">
   <div class="container-fluid">
     <a class="navbar-brand" href="#"><img src="circle.png" class="nav_img"></a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -78,7 +102,7 @@
 <!----------- page loading jAVASCRIPT-->
 <!------------------navbar-->
 
-<div class="colosal">
+<div class="colosal" style="position:relative;z-index:1">
   <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
   <div class="carousel-indicators">
     <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1" style="color:black;"></button>
@@ -237,24 +261,7 @@ studing books releted to ncert . This exam was conducted by ncert every year. It
       </div>
 </div>
 </div>
-<div class="mode" >
 
-<div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered" role="document">
-    <div class="modal-content" style="background-color: #b3cdd1 ;background-image: linear-gradient(315deg, #b3cdd1 0%, #9fa4c4 74%);
-">
-      <div class="modal-header border-bottom-0">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">×</span>
-        </button>
-      </div>
-      <div class="modal-body">
-    <div class="change">
-      <iframe width="350" height="340" src="https://www.youtube.com/embed/1K8yJ5cQ2eM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen ></iframe>
-    </div>
-  </div>
-</div>
-</div>
 
 <script>
 document.onreadystatechange = function() {
@@ -266,6 +273,8 @@ document.onreadystatechange = function() {
         document.querySelector("body").style.visibility = "visible";
     }
 };
+
+
 var TxtType = function(el, toRotate, period) {
         this.toRotate = toRotate;
         this.el = el;
@@ -324,32 +333,7 @@ var TxtType = function(el, toRotate, period) {
     };
 
 </script>
-<script >
-var modal = document.getElementById("myModal");
 
-// Get the button that opens the modal
-var btn = document.getElementById("myBtn");
-
-// Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close")[0];
-
-// When the user clicks on the button, open the modal
-btn.onclick = function() {
-  modal.style.display = "block";
-}
-
-// When the user clicks on <span> (x), close the modal
-span.onclick = function() {
-  modal.style.display = "none";
-}
-
-// When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
-  }
-}
-</script>
 <!-- jQuery -->
 <script src='https://code.jquery.com/jquery-3.3.1.slim.min.js'></script>
 <!-- Popper JS -->
@@ -389,7 +373,7 @@ animateValue(obj, 0, 111110, 5000);
 </script>
 <script type="text/javascript">
   
-<script>
+
   var a = 0;
 $(window).scroll(function() {
 
