@@ -1,0 +1,18 @@
+{
+  "name": "factanotes",
+  "version": "1.0.0",
+  "description": "Hey study lerners this is gift from my side to all one who wanted notes",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon index.js"
+  },
+  "author": "Dilkush rajpurohit with Great thanks ! to My team",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap-icons": "^1.5.0",
+    "express": "^4.17.1",
+    "nodemailer": "^6.6.3",
+    "nodemon": "^2.0.12"
+  }
+}
