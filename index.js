@@ -3,7 +3,7 @@ const express=require("express")
 var app=express()
 var path=require("path")
 var crypto=require("crypto")
-var nodemailer=require("nodemailer")
+
 //-----------------Creating database and inserting------------
 
 //connectimng to database-------------------------------
