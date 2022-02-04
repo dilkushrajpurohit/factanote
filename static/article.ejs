@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title><%=books.Title%></title>
+	<meta charset="utf-8">
+
+	<title></title>
+	
+ <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap" rel="stylesheet">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+</head>
+<style>
+	.main_welcome{
+		background-image: url("https://images.unsplash.com/photo-1610563166150-b34df4f3bcd6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=776&q=80");
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+  .navbar-brand img{
+  height: 5vh;
+  width: 100%;
+}
+.main_welcome{
+  height: 60vh;
+  width: 100%;
+  
+}
+.title{
+  background-color: #813588;
+  height: auto;
+  width: 100%;
+}
+.title h1{
+  font-size: 2.5rem;
+  color: white;
+  text-align: center;
+}
+.inside1{
+  height: 50vh;
+  width: 80%;
+  display: flex;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+  border: 4px solid  #813588;
+
+}
+table{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+.inside2{
+  width: 80%;
+  height:50vh;
+  display: flex;
+  margin: 0 auto;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid orange;
+}
+</style>
+<body>
+
+<!------------------------- navbar ---------------->
+<nav class="navbar navbar-expand-lg navbar-light bg-dark">
+  <div class="container-fluid">
+
+    <a class="navbar-brand" href="#" style="color:black;"><img src="https://res.cloudinary.com/factnotes/image/upload/v1643919811/circle_exfymm.png"></a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page"mognomonnnfjjfref="#" style="color: whitw;" href="/">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/class10" style="color: white;">Class 10</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/class9" style="color: white;">Class 9</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" style="color:white;" href="https://www.youtube.com/c/factag">Youtube</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<div class="main_welcome"> </div>
+<div class="title"><h1><span style="color:pink"><%=books.Title%></span> </h1></div>
+<div class="start_content"><h5 style="text-align: center;"><span style="color:green;font-family: 'Roboto Condensed', sans-serif;">
+  <%=books.biomain%>.</span>
+  <img src="<%=books.img1link%>" class="inside1">
+</h5></div>
+<div style="width: 100%;height: 5vh;background-color: grey;"></div>
+<div class="v1"><h3 style="text-align:center;"><span style="color:green;border-bottom: 4px solid violent;border-radius: 5px;">What's happening</span> in inside world </h3>
+<iframe width="350" height="315" src="<%=books.youtubelink%>" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="display: flex;margin: 0 auto; align-content: center;justify-content: center; border: 5px solid green;"></iframe>
+</div>
+<div style="width: 100%;height: 3vh;background-color: purple;"></div>
+<h3 style="text-align:center">Here are the pdf to download</h3>
+<table border="2">
+  <tr>
+    <th>Sno</th>
+      <th>Name</th>
+        <th>Download link</th>
+  </tr>
+  <tr>
+    <td>1</td>
+     <td><%=books.n1%></td>
+     <td><a href="<%=books.l1%>">Download</a></td>
+  </tr>
+   <tr>
+    <td>2</td>
+     <td><%=books.n2%></td>
+     <td><a href="<%=books.l2%>">download</a></td>
+  </tr>
+    <tr>
+    <td>3</td>
+     <td><%=books.n3%></td>
+     <td><a href="<%=books.l3%>">download</a></td>
+  </tr>
+    <tr>
+    <td>4</td>
+     <td><%=books.n4%></td>
+     <td><a href="<%=books.l4%>">download</a></td>
+  </tr>
+    <tr>
+    <td>5</td>
+     <td><%=books.n5%></td>
+     <td><a href="<%=books.l5%>">download</a></td>
+  </tr>
+ 
+</table>
+<div style="width:100%;height: 5vh;background-color: grey;
+margin-top: 5vh;"></div>
+
+<img src="<%=books.img2link1%>" class="inside2">
+<div style="width:100%;height: 5vh;background-color: grey;
+margin-top: 5vh;"></div>
+
+<img src="<%=books.img2link2%>" class="inside2">
+<h2 style="text-align:center"><span style="color: red;">Some important</span> links to visit:-</h2>
+<h4><%=books.extratit1%></h4><a href="<%=books.extra1%>">Visit now</a>
+<h4><%=books.extratit2%></h4><a href="<%=books.extra2%>">Visit now</a>
+<h4><%=books.extratit3%></h4><a href="<%=books.extra3%>">Visit now</a>
+<h4><%=books.extratit4%></h4><a href="<%=books.extra4%>">Visit now</a>
+
+<div id="graphcomment"></div>
+<script type="text/javascript">
+
+  /* - - - CONFIGURATION VARIABLES - - - */
+
+  var __semio__params = {
+    graphcommentId: "factnote", // make sure the id is yours
+
+    behaviour: {
+      // HIGHLY RECOMMENDED
+      //  uid: "...", // uniq identifer for the comments thread on your page (ex: your page id)
+    },
+
+    // configure your variables here
+
+  }
+
+  /* - - - DON'T EDIT BELOW THIS LINE - - - */
+
+  function __semio__onload() {
+    __semio__gc_graphlogin(__semio__params)
+  }
+
+
+  (function() {
+    var gc = document.createElement('script'); gc.type = 'text/javascript'; gc.async = true;
+    gc.onload = __semio__onload; gc.defer = true; gc.src = 'https://integration.graphcomment.com/gc_graphlogin.js?' + Date.now();
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(gc);
+  })();
+  
+
+</script>
+<!-------------------------footer-------------->
+<footer style="height: 10vh;
+width: 100%;background-color: black;"><h5 style="color:white;text-align: center;">Ⓒ Copyright 2022 Factnotes corporation INC </h5><br>
+
+</footer>
+
+</body>
+</html>

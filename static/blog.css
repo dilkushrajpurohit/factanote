@@ -1,0 +1,44 @@
+.navbar-brand img{
+  height: 5vh;
+  width: 100%;
+}
+.main_welcome{
+  height: 60vh;
+  width: 100%;
+  
+}
+.title{
+  background-color: #813588;
+  height: auto;
+  width: 100%;
+}
+.title h1{
+  font-size: 2.5rem;
+  color: white;
+  text-align: center;
+}
+.inside1{
+  height: 50vh;
+  width: 80%;
+  display: flex;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+  border: 4px solid  #813588;
+
+}
+table{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+.inside2{
+  width: 80%;
+  height:50vh;
+  display: flex;
+  margin: 0 auto;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid orange;
+}

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>Factnotes|Blogs</title>
+
+ <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<style>
+.navbar-brand img{
+  height: 5vh;
+  width: 100%;
+}
+.main_welcome{
+  height: 60vh;
+  width: 100%;
+  
+}
+.title{
+  background-color: #813588;
+  height: auto;
+  width: 100%;
+}
+.title h1{
+  font-size: 2.5rem;
+  color: white;
+  text-align: center;
+}
+.inside1{
+  height: 50vh;
+  width: 80%;
+  display: flex;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+  border: 4px solid  #813588;
+
+}
+table{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+.inside2{
+  width: 80%;
+  height:50vh;
+  display: flex;
+  margin: 0 auto;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid orange;
+}
+</style>
+<body>
+<!------------------------- navbar ---------------->
+<nav class="navbar navbar-expand-lg navbar-light bg-dark">
+  <div class="container-fluid">
+
+    <a class="navbar-brand" href="#" style="color:black;"><img src="https://res.cloudinary.com/factnotes/image/upload/v1643919811/circle_exfymm.png"></a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle snavigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#" style="color: whitw;">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#" style="color: white;">Class 10</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#" style="color: white;">Class 9</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" style="color:white;">Youtube</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<!---------------------- blogs div--------------->
+<h1 style="text-align: center;"><span style="color:purple;">Blogs</span> by factnotes:-----</h1>
+<div class="container">
+<% article.forEach(articles => {%>
+
+<div class="card mt-4">
+	<div class="card-body">
+		<h4 class="card-tile"><%= articles.Title %></h4>
+		<div class="card-subtitle text-muted mb-2">
+	<%= articles.desc%>
+		</div>
+		<div class="card-text mb-2">
+		<%=articles.date%>
+		</div>
+		<a href="/blogs/<%=articles.id%>" class="btn btn-primary">Read more</a>
+	</div>
+</div>
+
+	
+</div>
+<% }) %>
+</body>
+</html>
